@@ -8,6 +8,9 @@ import { HomeComponent } from '../home/home.component';
 })
 
 export class ImageSearcherPipe implements PipeTransform {
+
+
+
   transform(images: Image[], searchTerm: string, filterTerm: string): Image[] {
     if (!images || !searchTerm) {
       return images;

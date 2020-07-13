@@ -26,4 +26,4 @@ import { ImageSearcherPipe } from './pipes/imageSearcher-filter.pipe';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 
