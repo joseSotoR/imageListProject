@@ -12,9 +12,22 @@
   </table>
 </div>
 
-<div class="card" *ngFor="let image of images | imageFilter: searchTerm: filterTerm">
-  <div class="card-body">
-    <img [lazyLoad]=image.url/>
-    <p>{{image.text}}</p>
+
+<div class="container">
+  <div class="row"  *ngFor="let image of images | imageFilter: searchTerm: filterTerm">
+    <div class="col py-3 px-lg-5">
+      <div class="card">
+
+          <img [lazyLoad]=image.url />
+          
+       
+      </div>
+    </div>
+    <div class="col py-3 px-lg-5">
+      <p>{{image.text}}</p>
+    </div>
   </div>
 </div>
+
+<app-scroll-top></app-scroll-top>
+

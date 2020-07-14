@@ -19,5 +19,4 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
   });
 
-  
 });

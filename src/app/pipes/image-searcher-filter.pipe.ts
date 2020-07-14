@@ -1,6 +1,5 @@
 import { PipeTransform, Pipe } from '@angular/core';
 import { Image } from '../models/image';
-
 import { HomeComponent } from '../home/home.component';
 
 @Pipe({
@@ -15,8 +14,7 @@ export class ImageSearcherPipe implements PipeTransform {
     if (!images || !searchTerm) {
       return images;
     }
-    
-    if (filterTerm == "filterByText") {
+    if (filterTerm === 'filterByText') {
       return images.filter(image => image.text.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1);
     } else {
       return images.filter(image => image.id === +searchTerm);
